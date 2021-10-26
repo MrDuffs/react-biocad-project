@@ -1,6 +1,6 @@
 import './App.css'
 import FilterDevices from './components/FilterDevices'
-import  Device  from './components/Device'
+import  Device  from './components/Device/Device'
 import Report from './components/Report'
 
 function App() {
