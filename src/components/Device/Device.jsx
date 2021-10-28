@@ -7,9 +7,11 @@ import ReportFilters from './ReportFilters'
 const Device = () => {
     return (
         <div className="device_container">
-            <UnitName />
+            <div className="device_devider">
+                <UnitName />
+                <ReportFilters />
+            </div>
             <DeviceInfo />
-            <ReportFilters />
         </div>
     )
 }
