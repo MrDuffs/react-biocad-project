@@ -1,6 +1,11 @@
 
 .device_container {
     margin: 0 50px;
+    display: flex;
+}
+
+.device_devider {
+    width: 320px;
 }
 
 .unit_name_container {
@@ -8,6 +13,7 @@
 }
 
 .unit_name_icon {
+    margin-top: 5px;
     width: 40px;
     height: 40px;
 }
@@ -71,4 +77,32 @@
     cursor: pointer;
     font-size: 14px;
     font-weight: 500;
+}
+
+.device_info_container {
+    box-sizing: border-box;
+    margin-left: 30px;
+    padding: 20px 18px;
+    width: 550px;
+    height: 330px;
+    background: #F7F7F7;
+    border-radius: 5px;
+}
+
+.device_info_container p {
+    margin-bottom: 6px;
+}
+
+.device_info_container p, span {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.device_info_container p span {
+    color: #8C8C8C;
+}
+
+.device_guid, .device_bims_id, .device_tam {
+    color: #4990E2;
 }
