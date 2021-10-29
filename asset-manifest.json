@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/react-biocad-project/static/css/main.feda7bf6.chunk.css",
+    "main.js": "/react-biocad-project/static/js/main.7d27d750.chunk.js",
+    "main.js.map": "/react-biocad-project/static/js/main.7d27d750.chunk.js.map",
+    "runtime-main.js": "/react-biocad-project/static/js/runtime-main.69ea910a.js",
+    "runtime-main.js.map": "/react-biocad-project/static/js/runtime-main.69ea910a.js.map",
+    "static/js/2.bd872e85.chunk.js": "/react-biocad-project/static/js/2.bd872e85.chunk.js",
+    "static/js/2.bd872e85.chunk.js.map": "/react-biocad-project/static/js/2.bd872e85.chunk.js.map",
+    "index.html": "/react-biocad-project/index.html",
+    "static/css/main.feda7bf6.chunk.css.map": "/react-biocad-project/static/css/main.feda7bf6.chunk.css.map",
+    "static/js/2.bd872e85.chunk.js.LICENSE.txt": "/react-biocad-project/static/js/2.bd872e85.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/react-biocad-project/static/media/TTNorms-Regular.9a14e0e8.woff",
+    "static/media/arrow.e0ee23d5.svg": "/react-biocad-project/static/media/arrow.e0ee23d5.svg",
+    "static/media/checkmark.c5fc0897.svg": "/react-biocad-project/static/media/checkmark.c5fc0897.svg",
+    "static/media/cross.9278c2b3.svg": "/react-biocad-project/static/media/cross.9278c2b3.svg",
+    "static/media/scale.7b553fc4.svg": "/react-biocad-project/static/media/scale.7b553fc4.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.69ea910a.js",
+    "static/js/2.bd872e85.chunk.js",
+    "static/css/main.feda7bf6.chunk.css",
+    "static/js/main.7d27d750.chunk.js"
+  ]
+}
