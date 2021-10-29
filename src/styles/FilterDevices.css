@@ -32,6 +32,11 @@ p, input, button .filter_devices {
     box-sizing: border-box;
 }
 
+.filter_devices_search_input:focus {
+    outline: none;
+    border: 1.5px solid #4990E2;
+}
+
 .filter_devices_search_btn {
     width: 90px;
     height: 40px;
@@ -42,4 +47,11 @@ p, input, button .filter_devices {
     border: none;
     border-radius: 3px;
     cursor: pointer;
+    transition: all 0.5s;
+}
+
+.filter_devices_search_btn:hover {
+    background: #404040;
+    transition: all 0.2s;
+	box-shadow: 0 7px 14px rgb(65 132 144 / 10%), 0 3px 6px rgb(0 0 0 / 8%);
 }
