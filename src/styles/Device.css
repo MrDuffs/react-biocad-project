@@ -25,6 +25,7 @@
     font-weight: 600;
     font-size: 20px;
     letter-spacing: 0.5px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
 }
 
 .report_filters_container {
@@ -56,18 +57,53 @@
     cursor: pointer;
 }
 
-.report_filters_radio label:nth-child(2) {
+/* Скрываем оригинальную радиокнопку */
+.real_radio_btn {
+    display: none;
+}
+
+/* Создаем кастомную радиокнопку */
+.custom_radio_btn {
+    position: relative;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: #ffffff;
+    border: 2px solid #C1C1C1;
+    border-radius: 50%;
+    vertical-align: text-top;
+    margin-right: 12px;
+}
+
+.custom_radio_btn::before {
+    content: "";
+  
+    /* Рисуем внешний круг */
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #4990E2;
+    border-radius: 50%;
+  
+    /* Выравниваем по центру */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+  
+    transition: 0.2s ease-in;
+}
+
+/* Механизм переключения кастомной радиокнопки */
+.real_radio_btn:checked + .custom_radio_btn::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.radio_group:nth-child(2) {
     margin: 10px 0;
 }
 
-.report_filters_radio input {
-    width: 18px;
-    height: 18px;
-    margin-right: 12px;
-    cursor: pointer;
-}
-
-.report-filters-btn {
+.report_filters_btn {
     width: 180px;
     height: 40px;
     color: #FFFFFF;
@@ -77,6 +113,13 @@
     cursor: pointer;
     font-size: 14px;
     font-weight: 500;
+    transition: all 0.5s;
+}
+
+.report_filters_btn:hover {
+    background: #529df2;
+    transition: all 0.2s;
+	box-shadow: 0 7px 14px rgb(65 132 144 / 10%), 0 3px 6px rgb(0 0 0 / 8%);
 }
 
 .device_info_container {
@@ -90,7 +133,7 @@
 }
 
 .device_info_container p {
-    margin-bottom: 6px;
+    margin-bottom: 5.5px;
 }
 
 .device_info_container p, span {
